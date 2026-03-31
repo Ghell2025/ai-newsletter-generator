@@ -1,0 +1,51 @@
+export const COLORS: Record<string, string> = {
+  'Double Mitre Saw': '#1a1a2e',
+  'Single Mitre Saw': '#334155',
+  'CNC Profile Machining': '#1e40af',
+  '4-Axis Machining': '#7c3aed',
+  '3-Axis Machining': '#2563eb',
+  'Cutting Center': '#0891b2',
+  'Production Optimization': '#059669',
+  'Automation Upgrades': '#d97706',
+  'Technical Service': '#dc2626',
+  'Retrofitting': '#ea580c',
+  '3D Simulations': '#6d28d9',
+  'Tool Longevity': '#16a34a',
+};
+
+export function getCategoryColor(category: string): string {
+  return COLORS[category] || '#1a1a2e';
+}
+
+export const styles = {
+  body: 'margin:0;padding:0;background:#f1f5f9;font-family:Arial,Helvetica,sans-serif;',
+  container: 'max-width:600px;margin:0 auto;background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);',
+  header: 'background:linear-gradient(135deg,#1a1a2e 0%,#292929 50%,#32373c 100%);padding:36px 32px;text-align:center;',
+  logo: 'width:180px;height:auto;margin-bottom:16px;',
+  headerTitle: 'color:#ffffff;font-size:22px;font-weight:700;margin:0 0 6px 0;letter-spacing:-0.3px;',
+  headerSubtitle: 'color:#94a3b8;font-size:13px;margin:0;font-weight:400;',
+  headerTagline: 'color:#cbd5e1;font-size:11px;margin:8px 0 0 0;font-weight:400;letter-spacing:0.5px;text-transform:uppercase;',
+  greeting: 'padding:32px 32px 16px;font-size:17px;color:#1e293b;line-height:1.5;',
+  greetingName: 'font-weight:700;color:#1a1a2e;',
+  intro: 'padding:0 32px 24px;font-size:14px;color:#475569;line-height:1.7;',
+  sectionTitle: 'padding:0 32px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin:0 0 16px 0;',
+  divider: 'border:none;border-top:1px solid #e2e8f0;margin:0 32px;',
+  productSection: 'padding:24px 32px;',
+  productCard: 'border-radius:10px;overflow:hidden;margin-bottom:24px;border:1px solid #e2e8f0;',
+  productImage: 'width:100%;height:200px;object-fit:cover;display:block;',
+  productBody: 'padding:20px;',
+  productCategory: 'display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:4px 10px;border-radius:4px;margin-bottom:12px;',
+  productName: 'font-size:18px;font-weight:700;color:#1a1a2e;margin:0 0 10px 0;line-height:1.3;',
+  productDesc: 'font-size:14px;color:#475569;line-height:1.6;margin:0 0 14px 0;',
+  featureList: 'margin:0 0 16px 0;padding:0;list-style:none;',
+  featureItem: 'font-size:13px;color:#64748b;padding:3px 0;',
+  featureBullet: 'color:#1a1a2e;font-weight:700;margin-right:6px;',
+  ctaButton: 'display:inline-block;padding:11px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;color:#ffffff;',
+  companySection: 'background:#f8fafc;padding:28px 32px;border-top:1px solid #e2e8f0;',
+  companyTitle: 'font-size:15px;font-weight:700;color:#1a1a2e;margin:0 0 8px 0;',
+  companyText: 'font-size:13px;color:#64748b;line-height:1.6;margin:0;',
+  footer: 'background:#1a1a2e;padding:24px 32px;text-align:center;',
+  footerText: 'font-size:12px;color:#64748b;line-height:1.5;margin:0;',
+  footerLink: 'color:#60a5fa;text-decoration:none;',
+  footerContact: 'font-size:12px;color:#94a3b8;margin:8px 0 0 0;',
+};
